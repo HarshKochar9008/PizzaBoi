@@ -1,0 +1,111 @@
+@import '../_variables';
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border-bottom: 1px solid $gray-line;
+  padding: 0;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    gap: 32px;
+  }
+
+  &__logo-block {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+  }
+
+  &__title {
+    margin-top: 0;
+    h1 {
+      color: #181818;
+      font-size: 26px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: 900;
+      margin: 0;
+    }
+    p {
+      color: #7b7b7b;
+      font-size: 14px;
+      margin: 0;
+    }
+  }
+
+  &__center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 220px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+  }
+
+  &__auth {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    .header__user {
+      font-weight: 600;
+      color: #333;
+    }
+    .header__orders, .header__login, .header__register {
+      color: $orange;
+      text-decoration: none;
+      font-weight: 600;
+      margin-left: 8px;
+    }
+    .header__logout {
+      background: none;
+      border: none;
+      color: #888;
+      cursor: pointer;
+      font-size: 15px;
+      margin-left: 8px;
+    }
+  }
+
+  &__cart-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background: $orange;
+    border-radius: 30px;
+    padding: 10px 22px;
+    font-weight: 700;
+    font-size: 16px;
+    color: #fff;
+    box-shadow: 0 2px 8px rgba(255,122,23,0.08);
+    transition: background 0.2s;
+    &:hover {
+      background: darken($orange, 8%);
+    }
+    .header__cart-count {
+      background: #fff;
+      color: $orange;
+      border-radius: 50%;
+      font-size: 14px;
+      font-weight: 700;
+      padding: 2px 8px;
+      margin-left: 8px;
+      min-width: 24px;
+      text-align: center;
+      display: inline-block;
+    }
+  }
+}
