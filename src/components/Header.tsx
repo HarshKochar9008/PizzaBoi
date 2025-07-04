@@ -85,8 +85,7 @@ const Header: React.FC = () => {
           </div>
         </div>
       </header>
-      {/* Cart bar below header */}
-      {pathname !== "/cart" && (
+      {pathname !== "/cart" && pathname !== "/" && totalCount > 0 && (
         <div className={styles.fabCartBar}>
           <Link to="/cart" className={styles.cartBarContent}>
             <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="2"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61l1.38-7.39H6"/></svg>

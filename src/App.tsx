@@ -9,6 +9,7 @@ import FullPizza from "./pages/FullPizza";
 import Login from "./pages/Login";
 import Register from "./pages/Register";
 import FrontPage from './pages/FrontPage';
+import Pizzas from './pages/Pizzas';
 
 import "./scss/app.scss";
 
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/pizza/:id" element={<FullPizza />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
+          <Route path="/pizzas" element={<Pizzas />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

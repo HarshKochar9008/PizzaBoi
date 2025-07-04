@@ -92,7 +92,7 @@
 
 .heroSection {
   width: 100%;
-  background: #fff;
+  background: #e6e6e6;
   color: #222;
   padding: 64px 0 48px 0;
   display: flex;
@@ -138,8 +138,7 @@
 .pizzaSection {
   width: 100%;
   background: #fff;
-  margin-top: 0;
-  padding: 48px 0 0 0;
+  padding: 35px 0 0 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -161,6 +160,41 @@
   font-size: 1.1rem;
   margin-bottom: 32px;
   text-align: center;
+}
+
+.frontPagePizzaBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  padding: 24px 20px 16px 20px;
+  margin: 8px;
+  min-width: 220px;
+  max-width: 260px;
+  width: 100%;
+}
+
+.frontPagePizzaImg {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.frontPagePizzaTitle {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.frontPagePizzaDesc {
+  font-size: 1rem;
+  color: #D7263D;
+  text-align: center;
+  margin-top: 4px;
 }
 
 .pizzaList {
@@ -204,5 +238,122 @@
     flex-direction: column;
     align-items: center;
     gap: 16px;
+  }
+}
+
+.seeMoreBtn {
+  margin: 32px auto 0 auto;
+  display: block;
+  padding: 12px 36px;
+  background: #fff;
+  color: #D7263D;
+  border: 2px solid #D7263D;
+  border-radius: 24px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px rgba(215,38,61,0.08);
+
+  &:hover, &:focus {
+    background: #D7263D;
+    color: #fff;
+  }
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #222;
+  color: #fff;
+  padding: 48px 0 16px 0;
+  margin-top: 48px;
+  border-top-left-radius: 32px;
+  border-top-right-radius: 32px;
+  box-shadow: 0 -2px 16px rgba(0,0,0,0.06);
+}
+
+.footerContent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+  gap: 32px;
+}
+
+.footerBrand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  min-width: 220px;
+}
+
+.footerLogo {
+  width: 200px;
+  height: 200px;
+  object-fit: contain;
+}
+
+.footerLinks, .footerFeatures, .footerContact {
+  min-width: 160px;
+}
+
+.footerLinks h4, .footerFeatures h4, .footerContact h4 {
+  margin-bottom: 12px;
+  color: #D7263D;
+  font-size: 1.1rem;
+}
+
+.footerLinks ul, .footerFeatures ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footerLinks li, .footerFeatures li {
+  margin-bottom: 8px;
+}
+.footerFeatures{
+  color: #aaa;
+}
+
+.footerLinks a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.footerLinks a:hover {
+  color: #D7263D;
+}
+
+.footerContact p {
+  margin: 0 0 8px 0;
+  font-size: 0.98rem;
+  color: #aaa;
+}
+
+.footerBottom {
+  text-align: center;
+  color: #aaa;
+  font-size: 0.95rem;
+  margin-top: 32px;
+  padding-top: 16px;
+  border-top: 1px solid #333;
+}
+
+@media (max-width: 900px) {
+  .footerContent {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+    padding: 0 16px;
+  }
+  .footerBrand {
+    margin-bottom: 16px;
   }
 } 
