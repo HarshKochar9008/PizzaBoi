@@ -4,6 +4,7 @@ import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
 import Cart from "./pages/Cart";
+import Payment from "./pages/Payment";
 import NotFound from "./pages/NotFound";
 import FullPizza from "./pages/FullPizza";
 import Login from "./pages/Login";
@@ -21,6 +22,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<FrontPage />} />
           <Route path="/cart" element={<Cart />} />
+          <Route path="/payment" element={<Payment />} />
           <Route path="/pizza/:id" element={<FullPizza />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
