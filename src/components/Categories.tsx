@@ -13,6 +13,7 @@ const Categories: React.FC<CategoriesProps> = React.memo(
       <div className="categories">
         <ul>
           {categories.map((category, index) => {
+            const isJain = category === "Jain";
             return (
               <li
                 key={uuidv4()}

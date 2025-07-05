@@ -1,3 +1,20 @@
-declare module "*.png";
-declare module "*.svg";
-declare module "*.scss";
+declare module "*.png" {
+  const value: string;
+  export default value;
+}
+declare module "*.svg" {
+  const value: string;
+  export default value;
+}
+declare module "*.scss" {
+  const content: { [className: string]: string };
+  export default content;
+}
+declare module "*.jpg" {
+  const value: string;
+  export default value;
+}
+declare module "*.jpeg" {
+  const value: string;
+  export default value;
+}
