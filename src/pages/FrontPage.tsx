@@ -102,7 +102,7 @@ const FrontPage: React.FC = () => {
           {status === Status.LOADING
             ? skeletons
             : status === Status.ERROR
-            ? <div style={{textAlign: 'center', width: '100%'}}>Failed to load pizzas. Please try again later.</div>
+            ? <div style={{textAlign: 'center', width: '100%', height: '100%'}}>Failed to load pizzas. Please try again later.</div>
             : items.slice(0, 3).map((pizza) => (
                 <div key={pizza.id} className={styles.frontPagePizzaBlock}>
                   <img className={styles.frontPagePizzaImg} src={pizza.imageUrl} alt={pizza.name} />

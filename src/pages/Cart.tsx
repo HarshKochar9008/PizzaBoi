@@ -141,9 +141,9 @@ const Cart: React.FC = () => {
 
               <span>Back</span>
             </Link>
-            <div className="button pay-btn">
+            <Link to="/payment" className="button pay-btn">
               <span>Pay</span>
-            </div>
+            </Link>
           </div>
         </div>
       </div>
